@@ -1,10 +1,10 @@
-targets = sigcse2015.pdf
+targets = sigcse2016.pdf
 
 all: $(targets)
 
 pdflatex = pdflatex -interaction=errorstopmode -halt-on-error
 
-%.pdf: %.tex sigcse2015.bib
+%.pdf: %.tex sigcse2016.bib
 	$(pdflatex) $<
 	bibtex $*
 	$(pdflatex) $<
